@@ -1,5 +1,7 @@
 const port = 4000;
 const express = require("express");
+const dotenv = require("dotenv");
+
 const app = express();
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken"); // generate the token and vewrify the token
@@ -10,11 +12,12 @@ const { default: all_product } = require("./all_product");
 
 app.use(express.json());
 app.use(cors());
+dotenv.config();
+
+const URI = process.env.mongodb;
 
 //database connection with mongodb
-mongoose.connect(
-	"mongodb+srv://20harshalmali:carrental@carrentalcluster.m0sitsn.mongodb.net/?retryWrites=true&w=majority&appName=CarRentalCluster"
-);
+mongoose.connect(URI);
 
 //API Creation
 app.get("/", (req, res) => {

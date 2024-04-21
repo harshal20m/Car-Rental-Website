@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken"); // generate the token and vewrify the token
-
+//euuuuuuuu
 const path = require("path");
 const cors = require("cors");
 const { default: all_product } = require("./all_product");

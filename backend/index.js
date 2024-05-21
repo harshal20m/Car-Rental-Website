@@ -17,7 +17,14 @@ dotenv.config();
 const URI = process.env.mongodb;
 
 //database connection with mongodb
-mongoose.connect(URI);
+mongoose
+	.connect(URI)
+	.then(() => {
+		console.log("Connected to MongoDB");
+	})
+	.catch((error) => {
+		console.error("Error connecting to MongoDB:", error);
+	});
 
 //API Creation
 app.get("/", (req, res) => {

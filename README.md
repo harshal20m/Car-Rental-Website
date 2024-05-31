@@ -1,5 +1,7 @@
 # Car-Rental-Website
-Our WAD subject mini project Created by me @harshalmali
+Our WAD subject mini project Created by me @harshalmali [Live Demo](https://carrentalw.netlify.app/)
+**we have used mern stack for this project**
+
 
 # Home Page
 

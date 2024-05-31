@@ -8,7 +8,7 @@ import RelatedProducts from "../Components/RelatedProducts/RelatedProducts";
 
 const Product = () => {
 	const { all_product } = useContext(ShopContext);
-	const { productId } = useParams(); //to get the product id
+	const { productId } = useParams(); //to  get the product id
 	const product = all_product.find((e) => e.id === Number(productId));
 	const category = ["Sedan", "Suv", "EV"];
 	return (

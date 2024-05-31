@@ -9,7 +9,7 @@ const Shop = () => {
 	const sectionRef = useRef(null);
 
 	const scrollToSection = () => {
-		// Scrolls to the top of the section
+		// Scrolls to the top of  the section
 		sectionRef.current.scrollIntoView({ behavior: "smooth" });
 	};
 
